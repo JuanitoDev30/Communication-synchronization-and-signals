@@ -1,0 +1,46 @@
+# Doxyfile — configuracion de Doxygen para el taller de señales
+#
+# Genera documentacion HTML en docs/. Para producirla:
+#   cd /home/juan/Code/SO/Comunicacion_Sincronizacion_Señales
+#   doxygen Doxyfile
+#
+# La pagina principal queda en docs/html/index.html
+
+# ---------------------------------------------------------------------------
+# Proyecto
+# ---------------------------------------------------------------------------
+PROJECT_NAME        = "Servidor de tablero concurrente"
+PROJECT_BRIEF       = "Taller: señales en un servidor concurrente — Lab. Sistemas Operativos"
+PROJECT_NUMBER      = "1.0"
+OUTPUT_DIRECTORY    = docs
+
+# ---------------------------------------------------------------------------
+# Fuentes
+# ---------------------------------------------------------------------------
+INPUT               = src
+FILE_PATTERNS       = *.c *.h
+RECURSIVE           = NO
+EXTRACT_ALL         = YES
+EXTRACT_STATIC      = YES
+
+# ---------------------------------------------------------------------------
+# Salida
+# ---------------------------------------------------------------------------
+GENERATE_HTML       = YES
+HTML_OUTPUT         = html
+GENERATE_LATEX      = NO
+HAVE_DOT            = NO
+
+# ---------------------------------------------------------------------------
+# Calidad
+# ---------------------------------------------------------------------------
+WARN_IF_UNDOCUMENTED    = YES
+WARN_IF_DOC_ERROR       = YES
+QUIET                   = NO
+
+# ---------------------------------------------------------------------------
+# Presentacion
+# ---------------------------------------------------------------------------
+SHOW_INCLUDE_FILES  = YES
+SOURCE_BROWSER      = YES
+INLINE_SOURCES      = NO
